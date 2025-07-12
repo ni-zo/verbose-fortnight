@@ -1,0 +1,369 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+  font-family: "Poppins";
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0.5rem;
+  position: sticky;
+  top: 0;
+  background-color: #890000;
+  z-index: 30;
+  color: #000080;
+}
+.nav-logo {
+  display: flex;
+  margin: 0.5rem 1rem;
+}
+
+.nav-menu > * {
+  margin: 0.5rem 1rem;
+}
+
+.nav-logo > div {
+  margin: 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+.nav-logo > div > * {
+  margin: 0rem 1rem;
+}
+
+.nav-logo > div > i {
+  font-size: smaller;
+}
+
+.nav-logo > img {
+  width: 3.5rem;
+  /*height: 2rem;/
+}
+
+nav * {
+  color: #000080;
+}
+
+nav a,
+nav a:visited {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem 8rem;
+  }
+
+  .nav-logo {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .nav-menu * {
+    display: flex;
+    flex-direction: column;
+    margin: 0.4rem 0.5rem 0;
+    /* margin: 1rem 2rem; /
+  }
+
+  .nav img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.bg {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 50rem;
+  background: url("../assets/after/PHOTO-2024-02-06-17-56-46-7.jpg");
+  background-size: cover;
+  background-position: right bottom;
+  /*margin: 0 0 4rem;/
+  color: #002147;
+  word-spacing: 0.7em;
+  letter-spacing: 0.2em;
+  filter: grayscale(60%);
+}
+
+.bg > article {
+  backdrop-filter: blur(.6rem);
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 0 10.3rem;
+}
+
+.bg > article > p {
+  margin: 0.3em;
+  padding: 0.3em 2em;
+} 
+.real-div {
+  /*background-color: orange;/
+  /*background-color: #969696;/
+  background-color: #d9d9d9;
+  display: flex;
+}
+
+.quality,
+.qtesmonies {
+  width: 50%;
+}
+
+
+.tesmonies {
+  margin: 3em 3rem;
+}
+
+
+footer {
+  text-align: center;
+  margin: 5em auto;
+}
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #111;
+  border: 0.5px dashed #f8f8f8;
+  color: #999;
+  margin: 5px;
+}
+footer a:hover {
+  background: #222;
+}
+footer a .icons {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 20px;
+}
+*/
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+  font-family: "Poppins";
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  background-color: #890000;
+  z-index: 30;
+  color: #000080;
+}
+
+.nav-logo {
+  display: flex;
+  margin: 0.5rem 1rem;
+  align-items: center; /* Vertically center the logo and text */
+}
+
+.nav-menu {
+  display: flex; /* Make the menu items horizontal by default */
+  align-items: center; /* Vertically center the menu items */
+}
+
+.nav-menu > * {
+  margin: 0.5rem 1rem;
+}
+
+.nav-logo > div {
+  margin: 0 0.5rem; /* Adjust spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text vertically */
+}
+
+.nav-logo > div > * {
+  margin: 0rem 0.2rem; /* Adjust spacing */
+}
+
+.nav-logo > div > i {
+  font-size: smaller;
+}
+
+.nav-logo > img {
+  width: 3.5rem;
+  /*height: 2rem;*/
+}
+
+nav * {
+  color: #000080;
+}
+
+nav a,
+nav a:visited {
+  text-decoration: none;
+}
+
+/* Background Section */
+.bg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Center content vertically */
+  width: 100%;
+  height: 50rem;
+  background: url("../assets/after/PHOTO-2024-02-06-17-56-46-7.jpg");
+  background-size: cover;
+  background-position: right bottom;
+  color: #002147;
+  word-spacing: 0.7em;
+  letter-spacing: 0.2em;
+  filter: grayscale(60%);
+}
+
+.bg > article {
+  backdrop-filter: blur(0.6rem);
+  justify-content: space-evenly;
+  align-items: center; /* Center content vertically */
+  margin: 0 10.3rem; /* Adjust margins as needed */
+  padding: 1rem; /* Add padding for better spacing */
+}
+
+.bg > article > p {
+  margin: 0.3em;
+  padding: 0.3em 2em;
+}
+
+/* Real Div (Assuming this is a section with two columns) */
+.real-div {
+  background-color: #d9d9d9;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.quality,
+.qtesmonies {
+  width: 100%; /* Default: two columns */
+  padding: 1rem; /* Add padding for spacing */
+}
+
+/* Testimonies Section */
+.tesmonies {
+  margin: 3em 3rem;
+  text-align: center;
+}
+
+.blurb p {
+  
+  line-height: 2rem;
+  justify-self: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin: 0.5rem auto;
+}
+
+footer a {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #111;
+  border: 0.5px dashed #f8f8f8;
+  color: #999;
+  margin: 5px;
+}
+
+footer a:hover {
+  background: #222;
+}
+
+footer a .icons {
+  margin-top: 12px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  /* Navigation Bar */
+  nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    padding: 0.2rem;
+  }
+
+  .nav-logo {
+    margin-bottom: 0.2rem; /* Space between logo and menu */
+  }
+
+  .nav-menu {
+    flex-direction: row; /* Stack menu items vertically */
+    text-align: center; /* Center menu items */
+    justify-content: space-evenly;
+  }
+
+  .nav-menu > * {
+    margin: 0.2rem ; /* Adjust spacing */
+    font-weight: light;
+  }
+
+  /* Background Section */
+  .bg {
+    flex-direction: column; /* Stack content vertically */
+    height: auto; /* Allow height to adjust to content */
+    padding: 2rem 1rem; /* Add padding */
+  }
+
+  .bg > article {
+    margin: 0; /* Remove horizontal margins */
+    padding: 1rem; /* Add padding */
+  }
+
+  /* Real Div (Two Columns) */
+  .quality,
+  .qtesmonies {
+    width: 100%; /* Full width on small screens */
+  }
+
+  /* Testimonies Section */
+  .tesmonies {
+    margin: 2em 1rem; /* Adjust margins */
+  }
+}
+
+/* For medium screens (e.g., tablets) - adjust as needed */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Adjustments for tablets */
+  .bg > article {
+    margin: 0 5rem; /* Reduce margins */
+  }
+
+    /* Background Section */
+  .bg {
+    flex-direction: column; /* Stack content vertically */
+    height: auto; /* Allow height to adjust to content */
+    padding: 2rem 1rem; /* Add padding */
+  }
+
+  .bg > article {
+    margin: 0; /* Remove horizontal margins */
+    padding: 1rem; /* Add padding */
+  }
+}

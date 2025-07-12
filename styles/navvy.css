@@ -1,0 +1,60 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #890000;
+    padding: 0.5rem 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu a {
+    margin: 0 1rem;
+    color: #000080;
+    text-decoration: none;
+}
+
+.burger-menu {
+    display: none; /* Hidden by default */
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute;
+        top: 60px; /* Adjust based on your nav height */
+        background-color: #890000;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .burger-menu {
+        display: block; /* Show burger menu on mobile */
+    }
+}
+
+/*
+<nav>
+    <div class="nav-logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <div class="burger-menu" onclick="toggleMenu()">
+        &#9776; <!-- This is the hamburger icon -->
+    </div>
+    <div class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+*/

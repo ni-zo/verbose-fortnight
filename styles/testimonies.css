@@ -1,0 +1,264 @@
+/*@charset "UTF-8";
+/** {
+  color: #333;
+}/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*header {
+  background-color: #ff6600;
+  height: 80px;
+}
+
+footer {
+  background: #333;
+  height: 300px;
+}/
+
+/*main {
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0 2%;
+}/
+
+main h1 {
+  margin-bottom: 10px;
+}
+main h3 {
+  margin-top: 0;
+}
+main .blurb {
+  margin-bottom: 25px;
+}
+main ul.testimonials {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0;
+}
+main ul.testimonials figure,
+main ul.testimonials blockquote {
+  margin: 0;
+}
+main ul.testimonials blockquote,
+main ul.testimonials figcaption {
+  border-radius: 8px;
+  padding: 10px;
+}
+main ul.testimonials blockquote {
+  background: #a3c8db !important;
+  color: initial !important;
+  position: relative;
+}
+main ul.testimonials blockquote::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 25px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #a3c8db transparent !important;
+  color: initial !important;
+  display: block;
+  width: 0;
+}
+main ul.testimonials blockquote p {
+  margin: 0;
+  padding: 10px 20px;
+}
+main ul.testimonials blockquote p::before,
+main ul.testimonials blockquote p::after {
+  font-size: 3em;
+  display: block;
+  height: 0.5em;
+  color: whitesmoke !important;
+  position: absolute;
+}
+main ul.testimonials blockquote p::before {
+  content: "“︎";
+  top: 0;
+  left: 10px;
+}
+main ul.testimonials blockquote p::after {
+  content: "”︎";
+  bottom: 10px;
+  right: 10px;
+}
+main ul.testimonials figcaption {
+  float: right;
+  /*background: #d9d9d9 !important;/
+  background-color: #969696 !important;
+  color: initial !important;
+  margin-top: 20px;
+  width: max-content;
+  min-width: 150px;
+  text-align: center;
+}
+main ul.testimonials figcaption span {
+  display: block;
+}
+main ul.testimonials figcaption span:first-child {
+  font-weight: bold;
+}
+main ul.testimonials li {
+  max-width: 80%;
+  margin: 10px 0;
+  float: right;
+}
+main ul.testimonials li:nth-child(odd) {
+  float: left;
+}
+main ul.testimonials li:nth-child(odd) blockquote {
+  background: #c8dee9 !important;
+  color: initial !important;
+}
+main ul.testimonials li:nth-child(odd) blockquote::after {
+  border-color: #c8dee9 transparent !important;
+  color: initial !important;
+  right: unset;
+  left: 25px;
+}
+main ul.testimonials li:nth-child(odd) figcaption {
+  float: left;
+}
+*/
+
+
+@charset "UTF-8";
+
+/* Clearfix for legacy support */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main .blurb {
+  max-width: 40rem;
+  justify-self: center;
+  margin-bottom: 3rem;
+}
+
+main ul.testimonials {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Individual testimonial cards */
+main ul.testimonials li {
+  flex: 1 1 45%;
+  max-width: 500px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Blockquote styling */
+main ul.testimonials blockquote {
+  background: #a3c8db;
+  border-radius: 8px;
+  position: relative;
+  padding: 10px 20px;
+  color: #333;
+}
+
+main ul.testimonials li:nth-child(odd) blockquote {
+  background: #c8dee9;
+}
+
+main ul.testimonials blockquote::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 25px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #a3c8db transparent;
+}
+
+main ul.testimonials li:nth-child(odd) blockquote::after {
+  left: 25px;
+  right: auto;
+  border-color: #c8dee9 transparent;
+}
+
+main ul.testimonials blockquote p {
+  margin: 0;
+  position: relative;
+  padding: 10px 0 20px;
+}
+
+main ul.testimonials blockquote p::before {
+  content: "“";
+  font-size: 3em;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  color: #ffffff30;
+}
+
+main ul.testimonials blockquote p::after {
+  content: "”";
+  font-size: 3em;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  color: #ffffff30;
+}
+
+/* Figcaption (author info) */
+main ul.testimonials figcaption {
+  margin-top: 15px;
+  background-color: #969696;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  align-self: flex-end;
+  padding: 8px 12px;
+  min-width: 150px;
+}
+
+main ul.testimonials li:nth-child(odd) figcaption {
+  align-self: flex-start;
+}
+
+main ul.testimonials figcaption span {
+  display: block;
+}
+
+main ul.testimonials figcaption span:first-child {
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main ul.testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main ul.testimonials li {
+    flex: 1 1 100%;
+    max-width: 95%;
+  }
+
+  main ul.testimonials blockquote::after {
+    right: 20px;
+  }
+
+  main ul.testimonials li:nth-child(odd) blockquote::after {
+    left: 20px;
+  }
+
+  main ul.testimonials figcaption {
+    align-self: center !important;
+  }
+}

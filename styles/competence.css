@@ -1,0 +1,98 @@
+/*.competence-badge {
+  position: relative;
+  width: 7em;
+  display: inline-block;
+  margin: 0.2em 2rem;
+  letter-spacing: 0.1em;
+}
+
+.competence-badge .subtitler {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 4em;
+}
+
+.competence-badge svg {
+  x: 0;
+  y: 0px;
+  width: 7em;
+  height: 12em;
+}
+
+.competence-badge path {
+  fill:#2B2B2B;
+}
+
+.competence {
+  margin: auto;
+
+}
+
+
+.jobs {
+  margin: 0 2rem;
+  width: 40rem;
+}*/
+
+
+.competence {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center badges horizontally */
+  gap: 2rem 3rem; /* vertical and horizontal gaps */
+  margin: 2rem auto;
+  max-width: 1200px; /* or any max width you want */
+  padding: 0 1rem;
+}
+
+.competence-badge {
+  position: relative;
+  width: 120px; /* base width */
+  flex: 1 1 100px; /* flexible with a min width */
+  max-width: 140px;
+  text-align: center;
+  margin: 0; /* gaps handled by flex gap */
+  letter-spacing: 0.05em;
+}
+
+.competence-badge svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.competence-badge path {
+  fill: #2B2B2B;
+}
+
+.competence-badge .subtitler {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1rem;
+  color: white;
+  position: absolute;
+  width: 100%;
+  /*bottom: 12%;  position text near bottom */
+  top:12%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Adjust font size and badge size on smaller screens */
+@media (max-width: 600px) {
+  .competence-badge {
+    width: 90px;
+    max-width: 90px;
+    flex: 1 1 80px;
+  }
+  
+  .competence-badge .subtitler {
+    font-size: 0.85rem;
+    bottom: 10%;
+  }
+}

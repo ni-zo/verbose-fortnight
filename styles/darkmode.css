@@ -1,0 +1,15 @@
+/* Light Theme */
+body {
+    /*margin: 5rem;
+    padding:  5rem;*/
+     background-color: #E6E6E6; 
+   /* background-color: #fff;*/
+    color: #333;
+    font-size:  25px;
+}
+
+/* Dark Theme */
+.dark-mode {
+    background-color: #333;
+    color:  #E6E6E6;
+}
